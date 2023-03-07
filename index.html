@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mesurement</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="./measurement.css">
+    <script src="length.js"></script>
+</head>
+<body>
+    <div class="card text-center mt-5 col-lg-6 col-12 mx-lg-auto bg-warning">
+        <strong class="fs-3 text-lg-center d-block" style="font-family: cursive;">
+            <div class="card-header col-12">
+                <div>length converter</div>
+            </div>
+        </strong>
+        <div class="mt-3 mb-5 d-lg-flex ms-lg-5">
+            <div class="card text-bg-light col-lg-5 col-7 col-md-6 mx-lg-0 mx-auto">
+                <div class="card-body bg-light">
+                    <input type="number" class="form-control fw-bold" onkeyup="convert()" id="firstinput">
+                </div>
+                <div class="card-footer fw-bold">
+                    <select name="" id="firstselectedval"  onclick="convert()" class="fw-bold">
+                        <option value="firstkilometer">Kilometer</option>
+                        <option value="firstdecimeter">Decimeter</option>
+                        <option value="firstmeter">Meter</option>
+                        <option value="firstcentimeter">Centimeter</option>
+                        <option value="firstmillimeter">Millimeter</option>
+                        <option value="firstmicrometer">Micrometer</option>
+                        <option value="firstnanometer">Nanometer</option>
+                        <option value="firstmile">Mile</option>
+                        <option value="firstyard">Yard</option>
+                        <option value="firstinch">Inch</option>
+                        <option value="firstnauticalmile">Nautical mile</option>
+                    </select>
+                </div>
+            </div>
+            <h1 class="mt-2 ms-lg-3">=</h1>
+            <div class="card text-bg-light col-lg-5 col-7 col-md-6 mx-lg-0 mx-auto ms-lg-3">
+                <div class="card-body bg-light">
+                    <input type="number" class="form-control fw-bold" onkeyup="convertsecond()" id="inputtwo">
+                </div>
+                <div class="card-footer fw-bold">
+                    <select name="" id="selectval" onclick="convertsecond()" class="fw-bold">
+                        <option value="kilometer">Kilometer</option>
+                        <option value="decimeter">Decimeter</option>
+                        <option value="meter">Meter</option>
+                        <option value="centimeter">Centimeter</option>
+                        <option value="millimeter">Millimeter</option>
+                        <option value="micrometer">Micrometer</option>
+                        <option value="nanometer">Nanometer</option>
+                        <option value="mile">Mile</option>
+                        <option value="yard">Yard</option>
+                        <option value="inch">Inch</option>
+                        <option value="nautical mile">Nautical mile</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex">
+            <div class="bg-danger col-lg-2 col-4 ms-lg-5 mb-3 mx-lg-0 mx-auto">FORMULAS</div>
+            <div class="ms-5" id="demo"></div>
+        </div>
+    </div>
+</body>
+</html>
